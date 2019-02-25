@@ -4,7 +4,8 @@ const moment = require('moment');
 
 
 const concertThis = (artist) => {
-    const queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
+    console.log(`contacting bandsintown api...`);
+    const queryURL = "https://rest.bandsintown.com/artists/" + artist.trim() + "/events?app_id=codingbootcamp";
 
     axios.get(queryURL)
         .then(response => {

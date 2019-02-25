@@ -1,4 +1,4 @@
-console.log(`contacting spotify api...`);
+
 
 
 const Spotify = require('node-spotify-api');
@@ -9,6 +9,7 @@ const spotify = new Spotify({
 });
 
 const spotifyThis = (song) => {
+    console.log(`contacting spotify api...`);
     spotify.search({
         type: 'track',
         query: song

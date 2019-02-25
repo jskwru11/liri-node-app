@@ -2,6 +2,7 @@ const fs = require("fs");
 
 
 const doWhatItSays = () => {
+    console.log(`contacting a random api...`);
     const choices = ['concert-this', 'movie-this', 'spotify-this-song'];
     const randomNumber = Math.floor(Math.random() * choices.length);
     const selection = choices[randomNumber];

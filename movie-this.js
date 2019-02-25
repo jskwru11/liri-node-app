@@ -2,6 +2,7 @@ const axios = require('axios');
 
 
 const movieThis = (movie) => {
+    console.log(`contacting omdb api...`)
     const queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
 
     axios.get(queryURL)
